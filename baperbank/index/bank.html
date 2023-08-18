@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="text-center p-8">
+    <h1 class="mt-10 text-[#3ebb83] text-6xl">welcome to your <span class="text-fuchsia-500">account</span></h1>
+
+  </header>
+  <main>
+    <section class="mt-12">
+      <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto ">
+        <div class="bg-green-400 text-white p-7 rounded-lg">
+          <h3 class="text-3xl">Depostie</h3>
+          <h2  class="text-5xl">$<span id="deposite-total">00</span></h2>
+        </div>
+        <div class="bg-purple-500 text-white p-7 rounded-lg">
+          <h3 class="text-3xl">Withdraw</h3>
+          <h2  class="text-5xl">$<span id="withdraw-total">00</span> </h2>
+        </div>
+        <div class="bg-yellow-400 text-white p-7 rounded-lg">
+          <h3 class="text-3xl">Balance</h3>
+          <h2 class="text-5xl">$<span id="balance-total">1200</span> </h2>
+        </div>
+      </div>
+    </section>
+    <!-- deposite section -->
+    <section class="mt-12">
+      <div class="grid grid-cols-2 gap-3 w-9/12 mx-auto ">
+        <div class="bg-pink-400  p-7 rounded-lg">
+          <h3 class="text-3xl text-white">Depostie</h3>
+          <input id="deposite-input" class="w-9/12 mt-4 " type="text" placeholder="$ enter your ammount"><br>
+          <button id="deposite-btn"
+          class="w-[150px] mt-4  bg-[#10bb6e] px-5 py-2 text-white font-medium rounded-lg hover:bg-violet-600">Diposite</button>
+        </div>
+        <!--withdraw section  -->
+        <div class="bg-emerald-400  p-7 rounded-lg">
+          <h3 class="text-3xl text-white">Withdraw</h3>
+          <input id="withdraw-input" class="w-9/12 mt-4 px-4 " type="text" name="mail"  placeholder="$ Enter your ammount"><br>
+          <button id="withdraw-btn"
+          class="w-[150px] mt-4  bg-[#707c2c] px-5 py-2 text-white font-medium rounded-lg hover:bg-violet-600">withdraw</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  
+<script src="/baperbank/login/login.js"></script>
+</body>
+</html>
